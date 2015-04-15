@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/knopka_chetvertogo_ekrana"
-        android:id="@+id/knopka4"
+        android:id="@+id/btn4"
         android:layout_below="@+id/Tekst4"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="131dp" />

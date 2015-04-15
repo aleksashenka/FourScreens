@@ -12,10 +12,11 @@ public class ThurdScreenActivity extends ActionBarActivity implements View.OnCli
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_screen);
+        setContentView(R.layout.activity_thurd_screen);
 
-        View secondScreen = this.findViewById(R.id.knopka4);
+        View secondScreen = this.findViewById(R.id.btn4);
         secondScreen.setOnClickListener(this);
+
     }
 
     @Override
@@ -42,7 +43,7 @@ public class ThurdScreenActivity extends ActionBarActivity implements View.OnCli
 
     @Override
     public void onClick(View arg0) {
-        if(arg0.getId() == R.id.knopka4){
+        if(arg0.getId() == R.id.btn4){
             //define a new Intent for the second Activity
             Intent intent = new Intent(this, MainScreenActivity.class);
 

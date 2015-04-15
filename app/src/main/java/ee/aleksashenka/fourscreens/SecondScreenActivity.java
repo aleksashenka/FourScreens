@@ -1,24 +1,28 @@
 package ee.aleksashenka.fourscreens;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
-public class SecondScreenActivity extends ActionBarActivity {
+public class SecondScreenActivity extends ActionBarActivity implements View.OnClickListener  {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second_screen);
+
+        View secondScreen = this.findViewById(R.id.SecondScreenButton);
+        secondScreen.setOnClickListener(this);
     }
-// NU GDE GDE IMPLEMENTS?!
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_second_screen, menu);
+        getMenuInflater().inflate(R.menu.menu_main_screen, menu);
         return true;
     }
 
@@ -35,5 +39,16 @@ public class SecondScreenActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onClick(View arg0) {
+        if(arg0.getId() == R.id.SecondScreenButton){
+            //define a new Intent for the second Activity
+            Intent intent = new Intent(this, ThirdScreenActivity.class);
+
+            //start the parameters activity
+            this.startActivity(intent);
+        }
     }
 }

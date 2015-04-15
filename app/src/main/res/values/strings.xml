@@ -8,9 +8,11 @@
     <string name="Knopka_perehoda_na_vtoroj_ekran">Knopka_perehoda_na_vtoroj_ekran</string>
     <string name="Tekst_vtorogo_ekrana">Tekst vtorogo ekrana</string>
     <string name="Second_screen_button">New Button</string>
+
     <string name="Knopka_perehoda_na_tretij_ekran">Perehod na tretij ekran</string>
     <string name="title_activity_third_screen">ThirdScreenActivity</string>
     <string name="title_activity_thurd_screen">ThurdScreenActivity</string>
+
     <string name="tekst_chetvertogo_ekrana">Tekst na chetvertom ekrane</string>
     <string name="knopka_chetvertogo_ekrana">Vozvrant na glavnyj ekran</string>
 
